@@ -5,8 +5,8 @@ Resources:
   EC2Instance:
     Type: 'AWS::EC2::Instance'
     Properties:
-      SecurityGroups:
-        - !Ref InstanceSecurityGroup
+     SecurityGroupIds:
+        - !GetAtt 'InstanceSecurityGroup.GroupId'
       # Change this, as applicable to you      
       KeyName: circleci_infrastructre
       # Change this, as applicable to you
