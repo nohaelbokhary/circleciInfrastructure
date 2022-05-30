@@ -5,7 +5,6 @@ Resources:
   EC2Instance:
     Type: 'AWS::EC2::Instance'
     Properties:
-      SubnetId: subnet-06d6ee2dabd47b6a5
       SecurityGroups:
         - !Ref InstanceSecurityGroup
       # Change this, as applicable to you      
